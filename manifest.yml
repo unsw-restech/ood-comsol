@@ -6,6 +6,10 @@ role: batch_connect
 description: |
   This app will launch a [COMSOL Multiphysics] GUI on the [Katana cluster]. You
   will be able to interact with the COMSOL GUI through a VNC session.
+   
+  You will need to belong to the group that owns the license to use COMSOL. If 
+  you don't belong to that group, the job will start successfully in OnDemand
+  and Katana/PBS, then fail on Katana and the job will disappear in OnDemand.
 
   [COMSOL Multiphysics]: https://www.comsol.com
   [Katana cluster]: https://unsw-restech.github.io/restech-docs/

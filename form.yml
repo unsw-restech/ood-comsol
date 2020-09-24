@@ -1,0 +1,33 @@
+---
+cluster: "katana"
+form:
+  - version
+  - bc_num_hours
+  - num_cores
+  - bc_vnc_resolution
+  - bc_email_on_started
+attributes:
+  num_cores:
+    widget: "number_field"
+    label: "Number of cores"
+    value: 1
+    id: num_cores
+    help: |
+      Number of cores, 4GB per core.
+    min: 0
+    max: 48
+    step: 1
+  bc_vnc_resolution:
+    required: true
+  version:
+    widget: select
+    label: "COMSOL Multiphysics version"
+    help: "This defines the version of COMSOL Multiphysics you want to load."
+    options:
+        - ["Biomodel 5.3" , "comsol/5.3-biomodel"]
+        - ["Biomodel 5.4" , "comsol/5.4-biomodel"]
+        - ["Mech 5.4", "comsol/5.4-mech"]
+        - ["Mech 5.5", "comsol/5.5-mech"]
+        - ["Quantum 5.4", "comsol/5.4-quantum"]
+        - ["SPREE 5.4", "comsol/5.4-spree"]
+        - ["SPREE 5.5", "comsol/5.5-spree"]

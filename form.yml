@@ -27,11 +27,12 @@ attributes:
     label: "COMSOL Multiphysics version"
     help: "This defines the version of COMSOL Multiphysics you want to load."
     options:
-        - ["Biomodel 5.3" , "comsol/5.3-biomodel"]
-        - ["Biomodel 5.4" , "comsol/5.4-biomodel"]
+        - ["Biomodel 5.3", "comsol/5.3-biomodel"]
+        - ["Biomodel 5.4", "comsol/5.4-biomodel"]
         - ["Biomodel 5.6", "comsol/5.6-biomodel"]
         - ["Mech 5.4", "comsol/5.4-mech"]
         - ["Mech 5.5", "comsol/5.5-mech"]
         - ["Quantum 5.4", "comsol/5.4-quantum"]
         - ["SPREE 5.4", "comsol/5.4-spree"]
         - ["SPREE 5.5", "comsol/5.5-spree"]
+        - ["SPREE 5.6", "comsol/5.6-spree"]
